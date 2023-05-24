@@ -20,8 +20,8 @@
     ],
     "require": {
         "php": ">=8.0",
-        "laravel/framework": "^9.0",
-        "laravel-liberu/enums": "^2.0",
+        "laravel/framework": "^9.0|^10.0",
+        "laravel-liberu/enums": "^2.2.3",
         "laravel-liberu/helpers": "^2.0"
     },
     "autoload": {
