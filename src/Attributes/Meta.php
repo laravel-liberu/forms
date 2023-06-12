@@ -4,9 +4,9 @@ namespace LaravelEnso\Forms\Attributes;
 
 class Meta
 {
-    public const Mandatory = ['type'];
+    final public const Mandatory = ['type'];
 
-    public const Optional = [
+    final public const Optional = [
         'options', 'multiple', 'custom', 'content', 'step', 'min', 'max', 'disabled', 'readonly',
         'hidden', 'source', 'format', 'altFormat', 'time', 'rows', 'placeholder', 'trackBy',
         'label', 'tooltip', 'symbol', 'precision', 'thousand', 'decimal', 'positive', 'negative',
@@ -14,7 +14,7 @@ class Meta
         'plugins', 'taggable', 'searchMode',
     ];
 
-    public const Types = [
+    final public const Types = [
         'input', 'select', 'datepicker', 'timepicker', 'textarea', 'password', 'wysiwyg',
     ];
 }

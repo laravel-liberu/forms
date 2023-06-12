@@ -18,9 +18,9 @@ class Form
 {
     use When;
 
-    private Obj $template;
-    private Collection $dirty;
-    private ?Model $model;
+    private readonly Obj $template;
+    private readonly Collection $dirty;
+    private ?Model $model = null;
 
     public function __construct(string $filename)
     {

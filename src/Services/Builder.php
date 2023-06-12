@@ -14,9 +14,9 @@ use LaravelEnso\Helpers\Services\Obj;
 class Builder
 {
     public function __construct(
-        private Obj $template,
-        private Collection $dirty,
-        private ?Model $model = null
+        private readonly Obj $template,
+        private readonly Collection $dirty,
+        private readonly ?Model $model = null
     ) {
     }
 

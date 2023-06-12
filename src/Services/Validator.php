@@ -10,11 +10,8 @@ use LaravelEnso\Helpers\Services\Obj;
 
 class Validator
 {
-    private $template;
-
-    public function __construct(Obj $template)
+    public function __construct(private readonly Obj $template)
     {
-        $this->template = $template;
     }
 
     public function run(): void

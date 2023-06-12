@@ -9,7 +9,7 @@ use LaravelEnso\Helpers\Services\Obj;
 
 class Actions
 {
-    public function __construct(private Obj $template)
+    public function __construct(private readonly Obj $template)
     {
     }
 

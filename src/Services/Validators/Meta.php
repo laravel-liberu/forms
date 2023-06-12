@@ -10,9 +10,9 @@ use LaravelEnso\Helpers\Services\Obj;
 
 class Meta
 {
-    private ?Obj $meta;
+    private readonly ?Obj $meta;
 
-    public function __construct(private Obj $field)
+    public function __construct(private readonly Obj $field)
     {
         $this->meta = $field->get('meta');
     }
@@ -73,7 +73,7 @@ class Meta
         }
 
         if ($this->meta->get('type') === 'select') {
-            if ($this->selectMetaParameterMissing($this->field)) {
+            if ($this->selectMetaParameterMissing()) {
                 throw Template::missingSelectMetaAttribute($this->field->get('name'));
             }
 
