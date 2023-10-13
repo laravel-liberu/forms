@@ -9,11 +9,11 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/forms.php', 'enso.forms');
+        $this->mergeConfigFrom(__DIR__.'/../config/forms.php', 'liberu.forms');
 
         $this->publishes([
-            __DIR__.'/../config' => config_path('enso'),
-        ], ['forms-config', 'enso-config']);
+            __DIR__.'/../config' => config_path('liberu'),
+        ], ['forms-config', 'liberu-config']);
 
         Collection::wrap(['Forms/Builders/ModelForm', 'Forms/Templates/template'])
             ->each(fn ($stub) => $this->publishes([

@@ -34,10 +34,10 @@ class BuilderTest extends TestCase
 
         $this->assertEquals(
             $this->template->get('dividerTitlePlacement'),
-            config('enso.forms.dividerTitlePlacement')
+            config('liberu.forms.dividerTitlePlacement')
         );
 
-        $this->assertEquals($this->template->get('labels'), config('enso.forms.labels'));
+        $this->assertEquals($this->template->get('labels'), config('liberu.forms.labels'));
     }
 
     /** @test */
@@ -100,7 +100,7 @@ class BuilderTest extends TestCase
 
         $action = $this->template->get('actions')->get('post');
 
-        $this->assertEquals($action['button'], config('enso.forms.buttons.post'));
+        $this->assertEquals($action['button'], config('liberu.forms.buttons.post'));
         $this->assertFalse($action['forbidden']);
         $this->assertEquals($action['path'], '/route');
     }

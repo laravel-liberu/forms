@@ -128,7 +128,7 @@ class Builder
         }
 
         if (! $meta->has('placeholder')) {
-            $meta->set('placeholder', config('enso.forms.selectPlaceholder'));
+            $meta->set('placeholder', config('liberu.forms.selectPlaceholder'));
         }
 
         if (! $meta->has('trackBy')) {
@@ -146,13 +146,13 @@ class Builder
 
     private function computeDate($meta): void
     {
-        $altFormat = $meta->get('altFormat', config('enso.forms.altDateFormat'));
+        $altFormat = $meta->get('altFormat', config('liberu.forms.altDateFormat'));
         $meta->set('altFormat', $altFormat);
     }
 
     private function computeWysiwyg($meta): void
     {
-        $meta->set('apiKey', config('enso.forms.tinyMCEApiKey'));
+        $meta->set('apiKey', config('liberu.forms.tinyMCEApiKey'));
     }
 
     private function attributeValue($field)
@@ -185,7 +185,7 @@ class Builder
             : ['path', route($route, $this->template->get('routeParams'), false)];
 
         return [
-            'button' => config('enso.forms.buttons.'.$action),
+            'button' => config('liberu.forms.buttons.'.$action),
             'forbidden' => $this->isForbidden($route),
             $routeOrPath => $value,
         ];
@@ -194,16 +194,16 @@ class Builder
     private function appendParams(): self
     {
         if (! $this->template->has('authorize')) {
-            $this->template->set('authorize', config('enso.forms.authorize'));
+            $this->template->set('authorize', config('liberu.forms.authorize'));
         }
 
         if (! $this->template->has('dividerTitlePlacement')) {
-            $placement = config('enso.forms.dividerTitlePlacement');
+            $placement = config('liberu.forms.dividerTitlePlacement');
             $this->template->set('dividerTitlePlacement', $placement);
         }
 
         if (! $this->template->has('labels')) {
-            $this->template->set('labels', config('enso.forms.labels'));
+            $this->template->set('labels', config('liberu.forms.labels'));
         }
 
         if (! $this->template->has('clearErrorsControl')) {

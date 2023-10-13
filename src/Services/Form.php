@@ -306,7 +306,7 @@ class Form
 
     private function needsValidation(): bool
     {
-        $validations = Config::get('enso.forms.validations');
+        $validations = Config::get('liberu.forms.validations');
 
         return in_array($validations, [App::environment(), 'always']);
     }
