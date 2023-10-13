@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelEnso\Forms\Exceptions;
+namespace LaravelLiberu\Forms\Exceptions;
 
-use LaravelEnso\Helpers\Exceptions\EnsoException;
+use LaravelLiberu\Helpers\Exceptions\EnsoException;
 
 class Template extends EnsoException
 {

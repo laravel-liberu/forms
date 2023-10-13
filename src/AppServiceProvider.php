@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Forms;
+namespace LaravelLiberu\Forms;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;

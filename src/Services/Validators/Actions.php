@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\Forms\Services\Validators;
+namespace LaravelLiberu\Forms\Services\Validators;
 
 use Illuminate\Support\Collection;
-use LaravelEnso\Forms\Attributes\Actions as Attributes;
-use LaravelEnso\Forms\Exceptions\Template;
-use LaravelEnso\Helpers\Services\Obj;
+use LaravelLiberu\Forms\Attributes\Actions as Attributes;
+use LaravelLiberu\Forms\Exceptions\Template;
+use LaravelLiberu\Helpers\Services\Obj;
 
 class Actions
 {

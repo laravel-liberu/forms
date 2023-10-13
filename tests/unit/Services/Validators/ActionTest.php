@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelEnso\Forms\tests\Services\Validators;
+namespace LaravelLiberu\Forms\tests\Services\Validators;
 
 use Illuminate\Support\Collection;
-use LaravelEnso\Forms\Attributes\Actions as Attributes;
-use LaravelEnso\Forms\Exceptions\Template;
-use LaravelEnso\Forms\Services\Validators\Actions;
-use LaravelEnso\Helpers\Services\Obj;
+use LaravelLiberu\Forms\Attributes\Actions as Attributes;
+use LaravelLiberu\Forms\Exceptions\Template;
+use LaravelLiberu\Forms\Services\Validators\Actions;
+use LaravelLiberu\Helpers\Services\Obj;
 use Tests\TestCase;
 
 class ActionTest extends TestCase

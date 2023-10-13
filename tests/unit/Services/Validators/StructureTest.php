@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\Forms\tests\Services\Validators;
+namespace LaravelLiberu\Forms\tests\Services\Validators;
 
-use LaravelEnso\Forms\Attributes\Structure as Attributes;
-use LaravelEnso\Forms\Exceptions\Template;
-use LaravelEnso\Forms\Services\Validators\Structure;
-use LaravelEnso\Helpers\Services\Obj;
+use LaravelLiberu\Forms\Attributes\Structure as Attributes;
+use LaravelLiberu\Forms\Exceptions\Template;
+use LaravelLiberu\Forms\Services\Validators\Structure;
+use LaravelLiberu\Helpers\Services\Obj;
 use Tests\TestCase;
 
 class StructureTest extends TestCase

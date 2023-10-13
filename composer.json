@@ -26,13 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\Forms\\": "src/"
+            "LaravelLiberu\\Forms\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\Forms\\AppServiceProvider"
+                "LaravelLiberu\\Forms\\AppServiceProvider"
             ],
             "aliases": {}
         }

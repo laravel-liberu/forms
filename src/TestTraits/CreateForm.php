@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Forms\TestTraits;
+namespace LaravelLiberu\Forms\TestTraits;
 
 use Exception;
 
