@@ -2,9 +2,9 @@
 
 namespace LaravelLiberu\Forms\Exceptions;
 
-use LaravelLiberu\Helpers\Exceptions\EnsoException;
+use LaravelLiberu\Helpers\Exceptions\LiberuException;
 
-class Template extends EnsoException
+class Template extends LiberuException
 {
     public static function missingRootAttributes($attrs)
     {
